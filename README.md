@@ -26,13 +26,13 @@ This project isn't just about code; it's a love letter to simpler times. It's bo
 
 (Imagine a beautiful, animated GIF here showing a box being captured!)
 
-![Gameplay Screenshot](<img width="1218" height="956" alt="Screenshot 2025-07-23 154252" src="https://github.com/user-attachments/assets/de5d16da-c8bb-44a2-8b1e-03084fb87c5d" />
-)
+![Gameplay Screenshot]<img width="1218" height="956" alt="Screenshot 2025-07-23 154252" src="https://github.com/user-attachments/assets/de5d16da-c8bb-44a2-8b1e-03084fb87c5d" />
+
 
 (And another screenshot here showing the final score screen)
 
-![Game Over Screenshot](<img width="1159" height="940" alt="Screenshot 2025-07-23 154531" src="https://github.com/user-attachments/assets/8dd46a8f-fb5f-47b9-914d-fefce87f7ecf" />
-)
+![Game Over Screenshot]<img width="1159" height="940" alt="Screenshot 2025-07-23 154531" src="https://github.com/user-attachments/assets/8dd46a8f-fb5f-47b9-914d-fefce87f7ecf" />
+
 
 ---
 
