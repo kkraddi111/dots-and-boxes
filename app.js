@@ -11,11 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
         animation: {
             lineDrawDuration: 0.3,
             boxFillDuration: 0.4,
-            scoreUpdateDuration: 0.5,
+            scoreUpdateDuration: 0.3,
             modalFadeDuration: 0.5,
             boardFadeDuration: 0.5
         },
-        confettiColors: ['#a7f3d0', '#bae6fd', '#f9a8d4', '#fde047', '#d8b4fe'],
+        confettiColors: [
+            '#FF1493', // Neon pink
+            '#00FFFF', // Electric blue
+            '#FFFF00', // Bright yellow
+            '#39FF14', // Neon green
+            '#FF6B35', // Hot orange
+            '#9D4EDD', // Electric purple
+            '#40E0D0'  // Bright turquoise
+        ],
         aiThinkTime: 500
     };
 
@@ -91,9 +99,18 @@ document.addEventListener('DOMContentLoaded', () => {
          * @param {number} currentPlayer - The current player (1 or 2).
          */
         updateScoreboard(scores, currentPlayer) {
-            gsap.to(dom.player1ScoreEl, { duration: CONFIG.animation.scoreUpdateDuration, textContent: scores[1], ease: "power1.inOut" });
-            gsap.to(dom.player2ScoreEl, { duration: CONFIG.animation.scoreUpdateDuration, textContent: scores[2], ease: "power1.inOut" });
+            // Update scores instantly
+            dom.player1ScoreEl.textContent = scores[1];
+            dom.player2ScoreEl.textContent = scores[2];
+
+            // Apply "punch" scale animation to the scoring player's element
+            const scoringElement = currentPlayer === 1 ? dom.player1ScoreEl : dom.player2ScoreEl;
+            gsap.fromTo(scoringElement,
+                { scale: 1.5 },
+                { scale: 1, duration: CONFIG.animation.scoreUpdateDuration, ease: "elastic.out(1, 0.5)" }
+            );
             
+            // Update background colors
             dom.player1ScoreContainer.classList.toggle(CONFIG.playerColors[1].score, currentPlayer === 1);
             dom.player1ScoreContainer.classList.toggle('bg-transparent', currentPlayer !== 1);
             dom.player2ScoreContainer.classList.toggle(CONFIG.playerColors[2].score, currentPlayer === 2);
@@ -203,6 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 p.tiltAngle += 0.1;
                 p.x += Math.sin(p.tiltAngle) * 2;
                 
+                // Add glow effect to confetti
+                this.confettiCtx.shadowBlur = 15;
+                this.confettiCtx.shadowColor = p.color;
                 this.confettiCtx.fillStyle = p.color;
                 this.confettiCtx.beginPath();
                 this.confettiCtx.lineWidth = p.size;
