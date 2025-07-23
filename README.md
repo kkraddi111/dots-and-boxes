@@ -13,8 +13,11 @@ This project isn't just about code; it's a love letter to simpler times. It's bo
 🌟 Features
 
 ✨ Classic Gameplay: The timeless fun of connecting dots to capture boxes.
+
 🤖 A Cunning AI: Challenge a computer opponent with three levels of difficulty. Can you outsmart the machine?
+
 🎨 Modern & Smooth: A clean, beautiful interface with silky-smooth animations that make every move feel satisfying.
+
 🚀 Infinitely Replayable: With adjustable grid sizes, no two games are ever the same!
 
 ---
@@ -23,11 +26,13 @@ This project isn't just about code; it's a love letter to simpler times. It's bo
 
 (Imagine a beautiful, animated GIF here showing a box being captured!)
 
-![Gameplay Screenshot](placeholder.png)
+![Gameplay Screenshot](<img width="1218" height="956" alt="Screenshot 2025-07-23 154252" src="https://github.com/user-attachments/assets/de5d16da-c8bb-44a2-8b1e-03084fb87c5d" />
+)
 
-(And another screenshot here showing the final score screen with confetti!)
+(And another screenshot here showing the final score screen)
 
-![Game Over Screenshot](placeholder.png)
+![Game Over Screenshot](<img width="1159" height="940" alt="Screenshot 2025-07-23 154531" src="https://github.com/user-attachments/assets/8dd46a8f-fb5f-47b9-914d-fefce87f7ecf" />
+)
 
 ---
 
@@ -63,8 +68,11 @@ The game ends when all boxes are captured. The player with the most boxes wins!
 This trip down memory lane was brought to life with:
 
 📜 HTML5: The sturdy paper for our game.
+
 🎨 CSS3 & Tailwind CSS: The colorful pens and markers.
+
 🧠 JavaScript (ES6+): The imagination that brings the rules to life.
+
 ✨ GSAP: A little bit of magic to make everything sparkle.
 
 ---
