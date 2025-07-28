@@ -24,9 +24,9 @@ This project isn't just about code; it's a love letter to simpler times. It's bo
 
 🖼️ Gameplay Showcase
 
-(Imagine a beautiful, animated GIF here showing a box being captured!)
 
-![Gameplay Screenshot]<img width="1218" height="956" alt="Screenshot 2025-07-23 154252" src="https://github.com/user-attachments/assets/de5d16da-c8bb-44a2-8b1e-03084fb87c5d" />
+
+<img width="1218" height="956" alt="Screenshot 2025-07-23 154252" src="https://github.com/user-attachments/assets/de5d16da-c8bb-44a2-8b1e-03084fb87c5d" />
 
 
 (And another screenshot here showing the final score screen)
